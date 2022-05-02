@@ -127,7 +127,7 @@ public class RegistroActivity extends AppCompatActivity {
     }
 
     private void transitionBack() {
-        Intent intent = new Intent(RegistroActivity.this, MapsActivity.class);
+        Intent intent = new Intent(RegistroActivity.this, UserActivity.class);
         startActivity(intent);
         finish();
     }

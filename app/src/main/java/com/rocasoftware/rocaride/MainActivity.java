@@ -21,13 +21,14 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.regex.Pattern;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView nuevoUsuario;
+    TextView nuevoUsuario,olvidasteContra;
     MaterialButton inicioSesion;
     TextInputEditText emailEditText,passwordEditText;
     private FirebaseAuth mAuth;
@@ -37,29 +38,49 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        nuevoUsuario = findViewById(R.id.nuevoUsuario);
-        inicioSesion = findViewById(R.id.inicioSesion);
-        emailEditText = findViewById(R.id.emailEditText);
-        passwordEditText = findViewById(R.id.passwordEditText);
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user!=null)
+        {
+            Intent intent = new Intent(MainActivity.this,UserActivity.class);
+            startActivity(intent);
+            finish();
+        }
+        else
+        {
+            nuevoUsuario = findViewById(R.id.nuevoUsuario);
+            inicioSesion = findViewById(R.id.inicioSesion);
+            emailEditText = findViewById(R.id.emailEditText);
+            passwordEditText = findViewById(R.id.passwordEditText);
+            olvidasteContra = findViewById(R.id.olvidasteContra);
 
-        mAuth = FirebaseAuth.getInstance();
+            mAuth = FirebaseAuth.getInstance();
 
-        nuevoUsuario.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, RegistroActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+            nuevoUsuario.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(MainActivity.this, RegistroActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+            });
 
-        inicioSesion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                validate();
-            }
-        });
+            inicioSesion.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    validate();
+                }
+            });
 
+
+            olvidasteContra.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(MainActivity.this,ForgotPassword.class);
+                    startActivity(intent);
+                    finish();
+                }
+            });
+        }
     }
 
     private void validate() {
@@ -100,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful())
                         {
-                            Intent intent = new Intent(MainActivity.this,MapsActivity.class);
+                            Intent intent = new Intent(MainActivity.this,UserActivity.class);
                             startActivity(intent);
                             finish();
                         }
