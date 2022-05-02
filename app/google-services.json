@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "121461082365",
+    "project_id": "fir-login-16ae3",
+    "storage_bucket": "fir-login-16ae3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121461082365:android:e288c30fedc82a6b545694",
+        "android_client_info": {
+          "package_name": "com.rocasoftware.firebaselogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121461082365-lq62ns391e8ae0r8mqt45sm8vl1nq6dh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rocasoftware.firebaselogin",
+            "certificate_hash": "dc71fe5353cad946ccd37f2a2eac8c787de62aa1"
+          }
+        },
+        {
+          "client_id": "121461082365-8n5nbt5qi1ift3640er5a10hlb3es369.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6x1q3_A-mwQpl1hqvROYO3r4y1e5rpPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121461082365-8n5nbt5qi1ift3640er5a10hlb3es369.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121461082365:android:9ac58ee1a4f8f19e545694",
+        "android_client_info": {
+          "package_name": "com.rocasoftware.googlelogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121461082365-hems30m8mr65ockh42csjbsmutt09c7u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rocasoftware.googlelogin",
+            "certificate_hash": "dc71fe5353cad946ccd37f2a2eac8c787de62aa1"
+          }
+        },
+        {
+          "client_id": "121461082365-8n5nbt5qi1ift3640er5a10hlb3es369.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6x1q3_A-mwQpl1hqvROYO3r4y1e5rpPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121461082365-8n5nbt5qi1ift3640er5a10hlb3es369.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121461082365:android:7716875f7c0369d8545694",
+        "android_client_info": {
+          "package_name": "com.rocasoftware.rocaride"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121461082365-8n5nbt5qi1ift3640er5a10hlb3es369.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6x1q3_A-mwQpl1hqvROYO3r4y1e5rpPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121461082365-8n5nbt5qi1ift3640er5a10hlb3es369.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
