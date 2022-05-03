@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user!=null)
         {
-            Intent intent = new Intent(MainActivity.this,UserActivity.class);
+            Intent intent = new Intent(MainActivity.this,PrincipalActivity.class);
             startActivity(intent);
             finish();
         }
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful())
                         {
-                            Intent intent = new Intent(MainActivity.this,UserActivity.class);
+                            Intent intent = new Intent(MainActivity.this,PrincipalActivity.class);
                             startActivity(intent);
                             finish();
                         }

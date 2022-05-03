@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RocaRide">
         <activity
+            android:name=".PrincipalActivity"
+            android:exported="false" />
+        <activity
             android:name=".ForgotPassword"
             android:exported="false" />
         <!--

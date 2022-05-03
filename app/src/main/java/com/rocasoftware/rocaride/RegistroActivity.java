@@ -107,7 +107,7 @@ public class RegistroActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful())
                         {
-                            Intent intent = new Intent(RegistroActivity.this,UserActivity.class);
+                            Intent intent = new Intent(RegistroActivity.this,PrincipalActivity.class);
                             startActivity(intent);
                             finish();
                         }
@@ -127,7 +127,7 @@ public class RegistroActivity extends AppCompatActivity {
     }
 
     private void transitionBack() {
-        Intent intent = new Intent(RegistroActivity.this, UserActivity.class);
+        Intent intent = new Intent(RegistroActivity.this, MainActivity.class);
         startActivity(intent);
         finish();
     }
